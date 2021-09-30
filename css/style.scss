@@ -1,0 +1,28 @@
+$FuenteU: 'Montserrat', sans-serif;
+$color: #4E5150;
+$color-primario: #333333;
+$color-secundario: #4F4F4F;
+$color-variacion1: #828282;
+$color-variacion2: #F2F2F2;
+$color-variacion3: #E0E0E0;
+$color-u:  #F2994A;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: $FuenteU;
+}
+.container {
+    padding: 0 12px;
+}
+.title {
+    color: $color;
+    font-size: 36px;
+    font-weight: 600;
+    padding-left: 6px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}

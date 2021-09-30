@@ -16,6 +16,11 @@
       href="https://devchallenges.io/"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Checkout Page</title>
       
@@ -36,13 +41,13 @@
           <div class="order-items__item">
            <img src="./images/photo1.png" alt="Backpack">
            <div class="description">
-             <h2>Vintage Backpack</h2>
-             <h3>$54.99</h3>
-             <h4>$94.99</h4>
+             <h2 class="description_title">Vintage Backpack</h2>
+             <h3 class="descrition_price">$54.99</h3>
+             <h4 class="description_desc">$94.99</h4>
              <div class="conter">
-              <div class="less">-</div>
-              <p>1</p>
-              <div class="more">+</div>
+              <button class="less">-</button>
+              <input type="number" placeholder="1">
+              <button class="more">+</button>
              </div>
            </div>
           </div>
@@ -50,13 +55,13 @@
           <div class="order-items__item">
             <img src="./images/photo2.png" alt="shoes">
             <div class="description">
-              <h2>Levi Shoes</h2>
-              <h3>$74.99</h3>
-              <h4>$124.99</h4>
+              <h2 class="description_title">Levi Shoes</h2>
+              <h3 class="descrition_price">$74.99</h3>
+              <h4 class="description_desc">$124.99</h4>
              <div class="conter">
-              <div class="less">-</div>
-              <p>1</p>
-              <div class="more">+</div>
+              <button class="less">-</button>
+              <input type="number" placeholder="1">
+              <button class="more">+</button>
              </div>
             </div>
           </div>
@@ -76,23 +81,25 @@
       </section>
 
     
-    <section class="form">
-     <form action="">
-       <h2>Contact infomation</h2>
-       <label for="">E-mail<input type="text" placeholder="Enter your email..."></label>
-       <label for="">Phone <input type="text" placeholder="Enter your phone..."></label>
+      <section class="form">
+        <form action="">
+          <h2>Contact infomation</h2>
+          <label for="mail">E-mail<input type="email" id="mail" placeholder="Enter your email..."></label>
+          <label for="phone">Phone <input type="tel" id="phone" placeholder="Enter your phone..."></label>
 
-       <h2>Shipping address</h2>
-       <label for="">Full name <input type="text" placeholder="Full name"></label>
-       <label for="">Address <input type="text" placeholder="Your address.."></label>
-       <label for="">City <input type="text" placeholder="Your city.."></label>
-       <label for="">Country <input type="text" placeholder="Your country.."></label>
-       <label for="">Postal code <input type="text" placeholder="Your postal code.."></label>
+          <h2>Shipping address</h2>
+          <label for="name">Full name <input type="text" id="name" placeholder="Full name"></label>
+          <label for="address">Address <input type="text" id="address" placeholder="Your address.."></label>
+          <label for="city">City <input type="text" id="city" placeholder="Your city.."></label>
+          <select name="country" id="">
+            <option value="">Your country..</option>
+          </select>
+          <label for="code">Postal code <input type="text" id="code" placeholder="Your postal code.."></label>
 
-       <label for=""><input type="checkbox">Save this information for next time</label>
-     </form>
-    </section>
-  </div>     
+         <label for=""><input type="checkbox">Save this information for next time</label>
+       </form>
+      </section>
+    </div>
+  <footer>created by angelicabolivar - devChallenges.io</footer>     
 </body>
-<footer>created by angelicabolivar - devChallenges.io</footer>
 </html>
