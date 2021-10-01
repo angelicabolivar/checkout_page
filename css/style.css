@@ -21,3 +21,132 @@ body {
   padding-top: 30px;
   margin-bottom: 20px;
 }
+
+.order {
+  width: 100%;
+  padding: 30px 27px;
+  background-color: #F2F2F2;
+  border-radius: 12px;
+}
+
+.order-items__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.order-items__item img {
+  width: 124px;
+  height: 125px;
+  border-radius: 13px;
+  margin-bottom: 28px;
+}
+
+.description {
+  padding-left: 20px;
+}
+.description_title {
+  font-size: 12px;
+  color: #4E5150;
+  margin-bottom: 10px;
+}
+.description .conter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #828282;
+  padding: 14px 12px;
+  border-radius: 12px;
+}
+.description .conter input {
+  width: 50px;
+  border: none;
+  text-align: center;
+  color: #333333;
+  font-size: 16px;
+  background-color: #F2F2F2;
+}
+.description .conter .more {
+  padding: 3px 4px;
+  border: none;
+  background-color: #E0E0E0;
+  color: #828282;
+  border-radius: 4px;
+}
+.description .conter .less {
+  border: none;
+  background-color: #E0E0E0;
+  color: #828282;
+  border-radius: 4px;
+  padding: 0 6px;
+}
+
+.price_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+.price_container h3 {
+  font-size: 14px;
+  color: #F2994A;
+  padding-right: 14px;
+}
+.price_container h4 {
+  font-size: 10px;
+  color: #4E5150;
+  padding-top: 2px;
+}
+
+.price .price_shiping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #828282;
+}
+.price .price_shiping h2 {
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  color: #333333;
+}
+.price .price_shiping h3 {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #333333;
+  padding-bottom: 8px;
+}
+.price .price_total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #828282;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.price .price_total h2 {
+  font-size: 14px;
+  color: #333333;
+  padding-top: 13px;
+}
+.price .price_total h3 {
+  font-size: 14px;
+  color: #333333;
+  padding-top: 10px;
+}
+
+.form {
+  margin-top: 40px;
+}
+.form_inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}

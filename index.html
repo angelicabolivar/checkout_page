@@ -42,8 +42,10 @@
            <img src="./images/photo1.png" alt="Backpack">
            <div class="description">
              <h2 class="description_title">Vintage Backpack</h2>
-             <h3 class="descrition_price">$54.99</h3>
-             <h4 class="description_desc">$94.99</h4>
+             <div class="price_container">
+              <h3>$54.99</h3>
+              <h4><del>$94.99</del></h4>
+             </div>
              <div class="conter">
               <button class="less">-</button>
               <input type="number" placeholder="1">
@@ -56,12 +58,14 @@
             <img src="./images/photo2.png" alt="shoes">
             <div class="description">
               <h2 class="description_title">Levi Shoes</h2>
-              <h3 class="descrition_price">$74.99</h3>
-              <h4 class="description_desc">$124.99</h4>
-             <div class="conter">
-              <button class="less">-</button>
-              <input type="number" placeholder="1">
-              <button class="more">+</button>
+              <div class="price_container">
+                <h3>$74.99</h3>
+                <h4><del>$124.99</del></h4>
+              </div>
+              <div class="conter">
+               <button class="less">-</button>
+               <input type="number" placeholder="1">
+               <button class="more">+</button>
              </div>
             </div>
           </div>
@@ -82,7 +86,7 @@
 
     
       <section class="form">
-        <form action="">
+        <form  class="form_inf" action="">
           <h2>Contact infomation</h2>
           <label for="mail">E-mail<input type="email" id="mail" placeholder="Enter your email..."></label>
           <label for="phone">Phone <input type="tel" id="phone" placeholder="Enter your phone..."></label>
