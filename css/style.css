@@ -141,7 +141,7 @@ body {
 .form {
   margin-top: 40px;
 }
-.form_inf {
+.form li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
