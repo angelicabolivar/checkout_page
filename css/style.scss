@@ -135,5 +135,84 @@ body {
       display: flex;
       flex-direction: column;
   }
+  h2 {
+      font-size: 14px;
+      color: $color-primario;
+      margin-bottom: 12px;
+  }
+  label {
+      font-size: 10px;
+      font-family: $FuenteU;
+      color:$color-secundario;
+      margin-bottom: 6px;
+  }
+  input {
+      border-radius: 12px;
+      margin-bottom: 16px;
+      padding: 13px 0px;
+      border: 1px solid $color-variacion1;
+  }
+  input::placeholder {
+      font-size: 12px;
+      font-family: $FuenteU;
+      color: $color-variacion1;
+      padding: 13px 0px 13px 40px;
+  }
+  .email_icon::placeholder {
+      background-image: url(./images/email.png);
+      background-size: 15px 15px;
+      
+  }
+  .phone_icon::placeholder {
+      background-image: url(./images/phone.png);
+  }
+  .no_list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  select {
+      font-family: $FuenteU;
+      font-size: 12px;
+      color:$color-variacion1;
+      border-radius: 12px;
+      padding: 12px 0px 12px 40px;
+      margin-bottom: 30px;
+      margin-right: 25px;
+      border: 1px solid $color-variacion1;
+      width: 90%;
+  }
+  .advice {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: start;
+  }
+  .advice label {
+      margin-left: 8px;
+      font-family: $FuenteU;
+      font-size: 10px;
+      color:$color-secundario;
+  }
+  
+}
+.button {
+    font-family: $FuenteU;
+    font-size: 16px;
+    color:#ffffff;
+    background: $color-u;
+    padding: 17px 45px;
+    border-radius: 12px;
+    border: none; 
+    position: relative;
+    left: 183px;
+    margin-bottom: 90px;
+}
+footer {
+    font-family: $FuenteU;
+    font-size: 14px;
+    color: #bdbdbd;
+    text-align: center;
+    position: relative;
+    bottom: 24px;
 }
 
