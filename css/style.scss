@@ -61,6 +61,11 @@ body {
             font-size: 16px;
             background-color: $color-variacion2;
         }
+        .conter_num::placeholder {
+            font-size: 16px;
+            font-family: $FuenteU;
+            color:$color-primario;
+        }
         .more {
             padding: 3px 4px;
             border:none;
@@ -92,6 +97,7 @@ body {
     }
 }
 .price {
+    margin-top: 80px;
     .price_shiping {
       display: flex;
       justify-content: space-between;
@@ -135,10 +141,15 @@ body {
       display: flex;
       flex-direction: column;
   }
-  h2 {
+  .contact_inf,
+  .shipping
+   {
       font-size: 14px;
       color: $color-primario;
       margin-bottom: 12px;
+  }
+  .shipping {
+      margin-top: 40px;
   }
   label {
       font-size: 10px;
@@ -156,15 +167,24 @@ body {
       font-size: 12px;
       font-family: $FuenteU;
       color: $color-variacion1;
-      padding: 13px 0px 13px 40px;
+      padding: 13px 0px 13px 40px; 
+
   }
   .email_icon::placeholder {
-      background-image: url(./images/email.png);
-      background-size: 15px 15px;
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 300;
       
   }
   .phone_icon::placeholder {
-      background-image: url(./images/phone.png);
+      font-family: "Font Awesome 5 Free";
+      font-weight: 300; 
+
+  }
+  .name_icon::placeholder {
+      color: $color-primario;
+      background-image: url(./images/name.png);
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
   }
   .no_list {
       display: flex;
@@ -214,5 +234,26 @@ footer {
     text-align: center;
     position: relative;
     bottom: 24px;
+}
+
+@media (min-width:600px) {
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 160px;
+    }
+    .title {
+        position:absolute;
+        left: 240px;
+        top:64px;
+    }
+    .order {
+        max-width: 400px;
+        max-height: 535px;
+        margin-left: 112px;
+
+    }
 }
 

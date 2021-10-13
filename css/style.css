@@ -65,6 +65,31 @@ body {
   font-size: 16px;
   background-color: #F2F2F2;
 }
+.description .conter .conter_num::-webkit-input-placeholder {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+.description .conter .conter_num::-moz-placeholder {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+.description .conter .conter_num:-ms-input-placeholder {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+.description .conter .conter_num::-ms-input-placeholder {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+.description .conter .conter_num::placeholder {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
 .description .conter .more {
   padding: 3px 4px;
   border: none;
@@ -97,6 +122,9 @@ body {
   padding-top: 2px;
 }
 
+.price {
+  margin-top: 80px;
+}
 .price .price_shiping {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,10 +178,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.form h2 {
+.form .contact_inf,
+.form .shipping {
   font-size: 14px;
   color: #333333;
   margin-bottom: 12px;
+}
+.form .shipping {
+  margin-top: 40px;
 }
 .form label {
   font-size: 10px;
@@ -198,39 +230,74 @@ body {
   padding: 13px 0px 13px 40px;
 }
 .form .email_icon::-webkit-input-placeholder {
-  background-image: url(./images/email.png);
-  background-size: 15px 15px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
 }
 .form .email_icon::-moz-placeholder {
-  background-image: url(./images/email.png);
-  background-size: 15px 15px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
 }
 .form .email_icon:-ms-input-placeholder {
-  background-image: url(./images/email.png);
-  background-size: 15px 15px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
 }
 .form .email_icon::-ms-input-placeholder {
-  background-image: url(./images/email.png);
-  background-size: 15px 15px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
 }
 .form .email_icon::placeholder {
-  background-image: url(./images/email.png);
-  background-size: 15px 15px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
 }
 .form .phone_icon::-webkit-input-placeholder {
-  background-image: url(./images/phone.png);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
 }
 .form .phone_icon::-moz-placeholder {
-  background-image: url(./images/phone.png);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
 }
 .form .phone_icon:-ms-input-placeholder {
-  background-image: url(./images/phone.png);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
 }
 .form .phone_icon::-ms-input-placeholder {
-  background-image: url(./images/phone.png);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
 }
 .form .phone_icon::placeholder {
-  background-image: url(./images/phone.png);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 300;
+}
+.form .name_icon::-webkit-input-placeholder {
+  color: #333333;
+  background-image: url(./images/name.png);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+.form .name_icon::-moz-placeholder {
+  color: #333333;
+  background-image: url(./images/name.png);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+.form .name_icon:-ms-input-placeholder {
+  color: #333333;
+  background-image: url(./images/name.png);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+.form .name_icon::-ms-input-placeholder {
+  color: #333333;
+  background-image: url(./images/name.png);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+.form .name_icon::placeholder {
+  color: #333333;
+  background-image: url(./images/name.png);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
 }
 .form .no_list {
   display: -webkit-box;
@@ -294,4 +361,35 @@ footer {
   text-align: center;
   position: relative;
   bottom: 24px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 160px;
+  }
+
+  .title {
+    position: absolute;
+    left: 240px;
+    top: 64px;
+  }
+
+  .order {
+    max-width: 400px;
+    max-height: 535px;
+    margin-left: 112px;
+  }
 }
