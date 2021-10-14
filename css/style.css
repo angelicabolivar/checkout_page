@@ -166,152 +166,82 @@ body {
   padding-top: 10px;
 }
 
-.form {
+.form_inf {
   margin-top: 40px;
 }
-.form li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.form .contact_inf,
-.form .shipping {
+.form_inf .contact_inf,
+.form_inf .shipping {
   font-size: 14px;
   color: #333333;
   margin-bottom: 12px;
 }
-.form .shipping {
+.form_inf .shipping {
   margin-top: 40px;
 }
-.form label {
+.form_inf .form-label {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   color: #4F4F4F;
-  margin-bottom: 6px;
 }
-.form input {
+.form_inf .form_input {
   border-radius: 12px;
   margin-bottom: 16px;
   padding: 13px 0px;
   border: 1px solid #828282;
+  width: 100%;
 }
-.form input::-webkit-input-placeholder {
+.form_inf .form_input::-webkit-input-placeholder {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color: #828282;
   padding: 13px 0px 13px 40px;
 }
-.form input::-moz-placeholder {
+.form_inf .form_input::-moz-placeholder {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color: #828282;
   padding: 13px 0px 13px 40px;
 }
-.form input:-ms-input-placeholder {
+.form_inf .form_input:-ms-input-placeholder {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color: #828282;
   padding: 13px 0px 13px 40px;
 }
-.form input::-ms-input-placeholder {
+.form_inf .form_input::-ms-input-placeholder {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color: #828282;
   padding: 13px 0px 13px 40px;
 }
-.form input::placeholder {
+.form_inf .form_input::placeholder {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color: #828282;
   padding: 13px 0px 13px 40px;
 }
-.form .email_icon::-webkit-input-placeholder {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 300;
+.form_inf .form-input-group {
+  position: relative;
 }
-.form .email_icon::-moz-placeholder {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 300;
+.form_inf .form-input-icon {
+  position: relative;
+  left: 14px;
+  top: 31px;
+  color: #828282;
 }
-.form .email_icon:-ms-input-placeholder {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 300;
-}
-.form .email_icon::-ms-input-placeholder {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 300;
-}
-.form .email_icon::placeholder {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 300;
-}
-.form .phone_icon::-webkit-input-placeholder {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 300;
-}
-.form .phone_icon::-moz-placeholder {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 300;
-}
-.form .phone_icon:-ms-input-placeholder {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 300;
-}
-.form .phone_icon::-ms-input-placeholder {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 300;
-}
-.form .phone_icon::placeholder {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 300;
-}
-.form .name_icon::-webkit-input-placeholder {
-  color: #333333;
-  background-image: url(./images/name.png);
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
-}
-.form .name_icon::-moz-placeholder {
-  color: #333333;
-  background-image: url(./images/name.png);
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
-}
-.form .name_icon:-ms-input-placeholder {
-  color: #333333;
-  background-image: url(./images/name.png);
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
-}
-.form .name_icon::-ms-input-placeholder {
-  color: #333333;
-  background-image: url(./images/name.png);
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
-}
-.form .name_icon::placeholder {
-  color: #333333;
-  background-image: url(./images/name.png);
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
-}
-.form .no_list {
+.form_inf .form-country-code {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
 }
-.form select {
+.form_inf select {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   color: #828282;
@@ -322,7 +252,7 @@ body {
   border: 1px solid #828282;
   width: 90%;
 }
-.form .advice {
+.form_inf .advice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,8 +263,9 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  margin-bottom: 20px;
 }
-.form .advice label {
+.form_inf .advice label {
   margin-left: 8px;
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
@@ -350,7 +281,7 @@ body {
   border-radius: 12px;
   border: none;
   position: relative;
-  left: 183px;
+  left: 216px;
   margin-bottom: 90px;
 }
 
@@ -391,5 +322,53 @@ footer {
     max-width: 400px;
     max-height: 535px;
     margin-left: 112px;
+  }
+
+  .form_inf .contact_inf,
+.form_inf .shipping {
+    font-size: 18px;
+  }
+  .form_inf .shipping {
+    margin-top: 60px;
+  }
+  .form_inf .form-label {
+    font-size: 12px;
+  }
+  .form_inf .form_input {
+    margin-bottom: 20px;
+    padding: 18px 0px;
+    width: 100%;
+  }
+  .form_inf .form_input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .form_inf .form_input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .form_inf .form_input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .form_inf .form_input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .form_inf .form_input::placeholder {
+    font-size: 16px;
+  }
+  .form_inf select {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    color: #828282;
+    border-radius: 12px;
+    padding: 12px 0px 12px 40px;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    border: 1px solid #828282;
+    width: 90%;
+  }
+  .form_inf .advice {
+    margin-bottom: 23px;
+  }
+  .form_inf .advice label {
+    font-size: 12px;
   }
 }
