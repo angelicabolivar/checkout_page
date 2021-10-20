@@ -17,7 +17,7 @@ body {
   color: #4E5150;
   font-size: 36px;
   font-weight: 600;
-  padding-left: 6px;
+  padding-left: 18px;
   padding-top: 30px;
   margin-bottom: 20px;
 }
@@ -56,9 +56,10 @@ body {
   border: 1px solid #828282;
   padding: 14px 12px;
   border-radius: 12px;
+  width: 122px;
 }
 .description .conter input {
-  width: 50px;
+  width: 60px;
   border: none;
   text-align: center;
   color: #333333;
@@ -281,7 +282,7 @@ body {
   border-radius: 12px;
   border: none;
   position: relative;
-  left: 216px;
+  left: 185px;
   margin-bottom: 90px;
 }
 
@@ -306,22 +307,55 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-top: 160px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
-  .title {
-    position: absolute;
-    left: 240px;
-    top: 64px;
-  }
-
+  /*.title {
+      position:absolute;
+      left: 240px;
+      top:64px;
+  }*/
   .order {
-    max-width: 400px;
-    max-height: 535px;
-    margin-left: 112px;
+    max-width: 380px;
+    max-height: 530px;
+  }
+
+  .order-items__item img {
+    width: 134px;
+    height: 135px;
+    margin-bottom: 32px;
+  }
+
+  .description_title {
+    font-size: 16px;
+  }
+  .description .conter {
+    width: 134px;
+  }
+  .description .conter input {
+    width: 70px;
+  }
+
+  .price_container {
+    margin-bottom: 34px;
+  }
+  .price_container h3 {
+    font-size: 16px;
+  }
+  .price_container h4 {
+    font-size: 12px;
+  }
+
+  .price {
+    margin-top: 75px;
+  }
+  .price .price_shiping h2 {
+    font-size: 18px;
+  }
+  .price .price_total h2 {
+    font-size: 18px;
   }
 
   .form_inf .contact_inf,
