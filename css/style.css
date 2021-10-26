@@ -177,7 +177,7 @@ body {
   margin-bottom: 12px;
 }
 .form_inf .shipping {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .form_inf .form-label {
   font-size: 10px;
@@ -225,6 +225,8 @@ body {
   position: relative;
 }
 .form_inf .form-input-icon {
+  width: 20px;
+  height: 16px;
   position: relative;
   left: 14px;
   top: 31px;
@@ -241,6 +243,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: flex-start;
           flex-direction: flex-start;
+  width: 100%;
 }
 .form_inf select {
   font-family: "Montserrat", sans-serif;
@@ -307,19 +310,23 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
-  /*.title {
-      position:absolute;
-      left: 240px;
-      top:64px;
-  }*/
+  .title {
+    position: relative;
+    left: 255px;
+    top: 30px;
+    margin-bottom: 30px;
+  }
+
   .order {
     max-width: 380px;
-    max-height: 530px;
+    max-height: 540px;
+    margin-left: 112px;
+    margin-top: 58px;
   }
 
   .order-items__item img {
@@ -363,13 +370,13 @@ footer {
     font-size: 18px;
   }
   .form_inf .shipping {
-    margin-top: 60px;
+    margin-top: 30px;
   }
   .form_inf .form-label {
     font-size: 12px;
   }
   .form_inf .form_input {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding: 18px 0px;
     width: 100%;
   }
@@ -404,5 +411,9 @@ footer {
   }
   .form_inf .advice label {
     font-size: 12px;
+  }
+
+  .button {
+    left: 227px;
   }
 }
