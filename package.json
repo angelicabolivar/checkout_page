@@ -1,0 +1,26 @@
+{
+  "name": "checkout_page",
+  "version": "1.0.0",
+  "description": "Descripcion",
+  "main": "js/app.js",
+  "scripts": {
+    "sass": "sass css/style.scss css/style.css",
+    "sass-watch": "sass --watch css/style.scss css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelicabolivar/checkout_page.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelicabolivar/checkout_page/issues"
+  },
+  "homepage": "https://github.com/angelicabolivar/checkout_page#readme"
+}

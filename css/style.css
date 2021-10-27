@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -30,8 +29,6 @@ body {
 }
 
 .order-items__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .order-items__item img {
@@ -50,8 +47,6 @@ body {
   margin-bottom: 10px;
 }
 .description .conter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: 1px solid #828282;
   padding: 14px 12px;
@@ -65,26 +60,6 @@ body {
   color: #333333;
   font-size: 16px;
   background-color: #F2F2F2;
-}
-.description .conter .conter_num::-webkit-input-placeholder {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
-}
-.description .conter .conter_num::-moz-placeholder {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
-}
-.description .conter .conter_num:-ms-input-placeholder {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
-}
-.description .conter .conter_num::-ms-input-placeholder {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
 }
 .description .conter .conter_num::placeholder {
   font-size: 16px;
@@ -107,8 +82,6 @@ body {
 }
 
 .price_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
 }
@@ -127,12 +100,8 @@ body {
   margin-top: 80px;
 }
 .price .price_shiping {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   border-top: 1px solid #828282;
 }
 .price .price_shiping h2 {
@@ -148,13 +117,9 @@ body {
   padding-bottom: 8px;
 }
 .price .price_total {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-top: 1px solid #828282;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .price .price_total h2 {
   font-size: 14px;
@@ -191,30 +156,6 @@ body {
   border: 1px solid #828282;
   width: 100%;
 }
-.form_inf .form_input::-webkit-input-placeholder {
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  color: #828282;
-  padding: 13px 0px 13px 40px;
-}
-.form_inf .form_input::-moz-placeholder {
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  color: #828282;
-  padding: 13px 0px 13px 40px;
-}
-.form_inf .form_input:-ms-input-placeholder {
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  color: #828282;
-  padding: 13px 0px 13px 40px;
-}
-.form_inf .form_input::-ms-input-placeholder {
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  color: #828282;
-  padding: 13px 0px 13px 40px;
-}
 .form_inf .form_input::placeholder {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
@@ -233,16 +174,9 @@ body {
   color: #828282;
 }
 .form_inf .form-country-code {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: flex-start;
-          flex-direction: flex-start;
+  justify-content: center;
+  flex-direction: flex-start;
   width: 100%;
 }
 .form_inf select {
@@ -257,16 +191,9 @@ body {
   width: 90%;
 }
 .form_inf .advice {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  flex-direction: row-reverse;
+  justify-content: start;
   margin-bottom: 20px;
 }
 .form_inf .advice label {
@@ -300,19 +227,10 @@ footer {
 
 @media (min-width: 600px) {
   .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   .title {
@@ -380,18 +298,6 @@ footer {
     padding: 18px 0px;
     width: 100%;
   }
-  .form_inf .form_input::-webkit-input-placeholder {
-    font-size: 16px;
-  }
-  .form_inf .form_input::-moz-placeholder {
-    font-size: 16px;
-  }
-  .form_inf .form_input:-ms-input-placeholder {
-    font-size: 16px;
-  }
-  .form_inf .form_input::-ms-input-placeholder {
-    font-size: 16px;
-  }
   .form_inf .form_input::placeholder {
     font-size: 16px;
   }
@@ -417,3 +323,5 @@ footer {
     left: 227px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
