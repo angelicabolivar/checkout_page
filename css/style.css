@@ -161,48 +161,53 @@ body {
 .form_inf .contact_inf,
 .form_inf .shipping {
   font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
   color: #333333;
   margin-bottom: 12px;
 }
 .form_inf .shipping {
   margin-top: 30px;
 }
-.form_inf .form-label {
+.form_inf .form-input-group .form-label {
   font-size: 10px;
-  font-family: "Montserrat", sans-serif;
+  line-height: 12px;
+  font-weight: 600;
   color: #4F4F4F;
 }
 .form_inf .form_input {
+  width: 100%;
   border-radius: 12px;
   margin-bottom: 16px;
-  padding: 13px 0px;
+  margin-top: 6px;
+  padding: 13px 0px 13px 46px;
   border: 1px solid #828282;
-  width: 100%;
 }
 .form_inf .form_input::placeholder {
   font-size: 12px;
-  font-family: "Montserrat", sans-serif;
+  line-height: 14px;
   color: #828282;
-  padding: 13px 0px 13px 40px;
+  padding: 13px 0px;
+  font-family: "Montserrat", sans-serif;
 }
 .form_inf .form-input-group {
   position: relative;
 }
 .form_inf .form-input-icon {
+  position: absolute;
   width: 20px;
   height: 16px;
-  position: relative;
   left: 14px;
-  top: 31px;
+  top: 40px;
   color: #828282;
 }
 .form_inf .form-country-code {
   display: flex;
-  justify-content: center;
-  flex-direction: flex-start;
   width: 100%;
 }
 .form_inf select {
+  width: 162px;
+  max-width: 218px;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   color: #828282;
@@ -210,8 +215,12 @@ body {
   padding: 12px 0px 12px 40px;
   margin-bottom: 30px;
   margin-right: 25px;
+  margin-top: 6px;
   border: 1px solid #828282;
-  width: 90%;
+}
+.form_inf .postal-code {
+  width: 162px;
+  max-width: 218px;
 }
 .form_inf .advice {
   display: flex;
@@ -256,95 +265,105 @@ footer {
     align-items: flex-start;
   }
 
-  .title {
-    position: relative;
-    left: 255px;
-    top: 30px;
-    margin-bottom: 30px;
+  /*.title {
+      position:relative;
+      left: 255px;
+      top:30px;
+      margin-bottom: 30px;
   }
-
   .order {
-    max-width: 380px;
-    max-height: 540px;
-    margin-left: 112px;
-    margin-top: 58px;
-  }
+      max-width: 380px;
+      max-height: 540px;
+      margin-left: 112px;
+      margin-top: 58px;
 
-  .order-items__item img {
-    width: 134px;
-    height: 135px;
-    margin-bottom: 32px;
   }
-
-  .description_title {
-    font-size: 16px;
+  .order-items__item {
+      img {
+          width: 134px;
+          height: 135px;
+          margin-bottom: 32px;
+      }
   }
-  .description .conter {
-    width: 134px;
+  .description {
+      &_title {
+          font-size: 16px;
+      }
+      .conter {
+         width: 134px;
+         input {
+          width: 70px;
+      }
+      }
   }
-  .description .conter input {
-    width: 70px;
-  }
-
   .price_container {
-    margin-bottom: 34px;
+      margin-bottom: 34px;
+      h3 {
+          font-size: 16px;
+      }
+      h4 {
+          font-size: 12px;
+      }
   }
-  .price_container h3 {
-    font-size: 16px;
-  }
-  .price_container h4 {
-    font-size: 12px;
-  }
-
   .price {
-    margin-top: 75px;
-  }
-  .price .price_shiping h2 {
-    font-size: 18px;
-  }
-  .price .price_total h2 {
-    font-size: 18px;
-  }
+      margin-top: 75px;
+      .price_shiping {
 
-  .form_inf .contact_inf,
-.form_inf .shipping {
-    font-size: 18px;
-  }
-  .form_inf .shipping {
-    margin-top: 30px;
-  }
-  .form_inf .form-label {
-    font-size: 12px;
-  }
-  .form_inf .form_input {
-    margin-bottom: 15px;
-    padding: 18px 0px;
-    width: 100%;
-  }
-  .form_inf .form_input::placeholder {
-    font-size: 16px;
-  }
-  .form_inf select {
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
-    color: #828282;
-    border-radius: 12px;
-    padding: 12px 0px 12px 40px;
-    margin-bottom: 30px;
-    margin-right: 25px;
-    border: 1px solid #828282;
-    width: 90%;
-  }
-  .form_inf .advice {
-    margin-bottom: 23px;
-  }
-  .form_inf .advice label {
-    font-size: 12px;
-  }
+        h2 {
+            font-size: 18px;
+          }
+      }
+      .price_total {
+          h2 {
+              font-size: 18px;
+          }
 
+      }
+  }
+  .form_inf {
+      .contact_inf,
+      .shipping
+       {
+          font-size: 18px;
+      }
+      .shipping {
+          margin-top: 30px;
+      }
+      .form-label {
+          font-size: 12px;
+      }
+      .form_input {
+          margin-bottom: 15px;
+          padding: 18px 0px;
+          width: 100%;
+      }
+      .form_input::placeholder {
+          font-size: 16px;
+      }
+
+      select {
+          font-family: $FuenteU;
+          font-size: 12px;
+          color:$color-variacion1;
+          border-radius: 12px;
+          padding: 12px 0px 12px 40px;
+          margin-bottom: 30px;
+          margin-right: 25px;
+          border: 1px solid $color-variacion1;
+          width: 90%;
+      }
+      .advice {
+          margin-bottom: 23px;
+      }
+      .advice label {
+          font-size: 12px;
+      }
+
+
+  }
   .button {
-    left: 227px;
-  }
+      left: 227px;
+  }*/
 }
 
 /*# sourceMappingURL=style.css.map */

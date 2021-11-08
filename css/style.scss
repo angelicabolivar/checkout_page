@@ -47,7 +47,8 @@ body {
         max-height: 136px;
         border-radius: 13px;
         margin-bottom: 28px;
-    }.description {
+    }
+    .description {
         margin-left: 20px;
         &_title {
             font-size: 12px;
@@ -113,7 +114,8 @@ body {
             }
         }
     }
-}.price {
+}
+.price {
     .price_shiping {
       display: flex;
       justify-content: space-between;
@@ -167,51 +169,56 @@ body {
   .shipping
    {
       font-size: 14px;
+      line-height: 17px;
+      font-weight: 600;
       color: $color-primario;
       margin-bottom: 12px;
   }
   .shipping {
       margin-top: 30px;
   }
-  .form-label {
+  .form-input-group .form-label {
       font-size: 10px;
-      font-family: $FuenteU;
+      line-height: 12px;
+      font-weight: 600;
       color:$color-secundario;
     
   }
   .form_input {
+      width: 100%;
       border-radius: 12px;
       margin-bottom: 16px;
-      padding: 13px 0px;
+      margin-top: 6px;
+      padding: 13px 0px 13px 46px;
       border: 1px solid $color-variacion1;
-      width: 100%;
+      
   }
   .form_input::placeholder {
       font-size: 12px;
-      font-family: $FuenteU;
+      line-height: 14px;
       color: $color-variacion1;
-      padding: 13px 0px 13px 40px; 
-
-  }
+      padding: 13px 0px;
+      font-family: $FuenteU;
+}
   .form-input-group {
       position: relative;
   } 
   .form-input-icon {
+      position:absolute;
       width: 20px;
       height: 16px;
-      position:relative;
       left: 14px;
-      top: 31px;
+      top: 40px;
       color: $color-variacion1;
   }
   .form-country-code {
     display: flex;
-    justify-content: center;
-    flex-direction: flex-start;
     width: 100%;
     
   }
   select {
+      width: 162px;
+      max-width: 218px;
       font-family: $FuenteU;
       font-size: 12px;
       color:$color-variacion1;
@@ -219,8 +226,12 @@ body {
       padding: 12px 0px 12px 40px;
       margin-bottom: 30px;
       margin-right: 25px;
+      margin-top: 6px;
       border: 1px solid $color-variacion1;
-      width: 90%;
+  }
+  .postal-code{
+      width: 162px;
+      max-width: 218px;
   }
   .advice {
       display: flex;
@@ -264,7 +275,7 @@ footer {
         justify-content: center;
         align-items: flex-start;
     }
-    .title {
+    /*.title {
         position:relative;
         left: 255px;
         top:30px;
@@ -362,6 +373,6 @@ footer {
     }
     .button {
         left: 227px;
-    }
+    }*/
 }
 
