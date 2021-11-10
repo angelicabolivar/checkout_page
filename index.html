@@ -84,7 +84,7 @@
 
     
       <section class="form">
-        <form  class="form_inf" action="">
+        <form  class="form_inf" action="" method="post">
       
           <h2 class="contact_inf">Contact infomation</h2>
           
@@ -92,13 +92,13 @@
             <div class="form-input-group">
               <label for="mail" class="form-label">E-mail</label>
               <i class="fa-solid fa-envelope form-input-icon"></i>
-              <input class="form_input" type="email" id="mail" placeholder="Enter your email...">
+              <input class="form_input" type="email" id="mail" placeholder="Enter your email..." name="email">
             </div>
           
             <div class="form-input-group">
               <label for="phone" class="form-label" >Phone</label>
               <i class="fa-solid fa-phone form-input-icon"></i>
-              <input class="form_input" type="tel" id="phone" placeholder="Enter your phone...">
+              <input class="form_input" type="tel" id="phone" placeholder="Enter your phone..." name="phone">
             </div>
           
           <h2 class="shipping">Shipping address</h2>
@@ -106,47 +106,50 @@
            <div class="form-input-group">
               <label for="name" class="form-label">Full name</label>
               <i class="fa-solid fa-circle-user form-input-icon"></i>
-              <input class="form_input" type="text" id="name" placeholder="Rodney Cotton">
+              <input class="form_input dark-name" type="text" id="name" placeholder="Rodney Cotton" name="name">
            </div>
 
           <div class="form-input-group">
               <label for="address" class="form-label">Address</label>
               <i class="fa-solid fa-house form-input-icon"></i>
-              <input class="form_input" type="text" id="address" placeholder="Your address..">
+              <input class="form_input" type="text" id="address" placeholder="Your address.." name="adress">
           </div>
            
           <div class="form-input-group">
               <label for="city" class="form-label">City</label>
               <i class="fa-solid fa-city form-input-icon"></i>
-              <input class="form_input" type="text" id="city" placeholder="Your city..">
+              <input class="form_input" type="text" id="city" placeholder="Your city.." name="city">
           </div>
         
           <div class="form-country-code">
-            <div class="form-country">
+            <div class="form-container">
               <div class="form-input-group">
                 <label for="country" class="form-label">Country</label>
                 <i class="fa-solid fa-city form-input-icon"></i>
                 <select name="country" id="country">
                   <option value="">Your country..</option>
+                  <option value="peru">Perú</option>
+                  <option value="venezuela">Venezuela</option>
                 </select>
               </div>
             </div>
 
-            <div class="form-code">
+            <div class="form-container">
               <div class="form-input-group">
                 <label for="code" class="form-label">Postal code</label>
                 <i class="fa-solid fa-city form-input-icon"></i>
-                <input class="form_input postal-code" type="text" id="code" placeholder="Your postal code..">
+                <input class="form_input " type="text" id="code" placeholder="Your postal code..">
               </div>
             </div>
           </div>
         
            <div class="advice">
              <label for="checkbox">Save this information for next time</label>
-             <input type="checkbox">
+             <input type="checkbox" id="checkbox">
            </div>
-
-         <button class="button">Continue</button>
+          <div class="form-button">
+            <button class="button">Continue</button>
+          </div>
        </form>
       </section>
     </div>
