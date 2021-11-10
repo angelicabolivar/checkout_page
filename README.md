@@ -27,7 +27,7 @@
 
 ## Overview
 
-![screenshot](./imagenes/checkout_desktop.png)
+![screenshot](.chechout_page/imagenes/checkout_desktop.png)
 ![screenshot](./imagenes/checkout_mobile_1.png)
 ![screenshot](./imagenes/checkout_mobile_2.png)
 
